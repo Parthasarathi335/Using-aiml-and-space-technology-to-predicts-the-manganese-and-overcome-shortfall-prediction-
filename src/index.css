@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --c-bg: #F4F1EA;
+  --c-primary: #24352B;
+  --c-secondary: #536B58;
+  --c-accent: #B56B32;
+  --c-surface: #FFFFFF;
+  --c-text: #20241F;
+  --c-muted: #687066;
+  --c-border: #D9D5CA;
+  --c-map: #D7D0BF;
+}
+
+@layer base {
+  body {
+    background-color: #F4F1EA;
+    color: #20241F;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+}
+
+/* Custom GIS scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F4F1EA;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D5CA;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #687066;
+}
+
+/* Leaflet GIS container overrides */
+.leaflet-container {
+  background-color: #D7D0BF !important;
+  font-family: inherit !important;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.leaflet-bar {
+  border: 1px solid #D9D5CA !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08) !important;
+}
+
+.leaflet-bar a {
+  background-color: #FFFFFF !important;
+  color: #20241F !important;
+  border-bottom: 1px solid #D9D5CA !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #F4F1EA !important;
+  color: #B56B32 !important;
+}
+
+.leaflet-control-scale-line {
+  background: rgba(255, 255, 255, 0.9) !important;
+  border: 1px solid #D9D5CA !important;
+  border-top: none !important;
+  color: #20241F !important;
+  font-size: 10px !important;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace !important;
+  padding: 2px 6px !important;
+}

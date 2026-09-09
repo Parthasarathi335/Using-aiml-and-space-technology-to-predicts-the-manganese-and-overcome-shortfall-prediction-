@@ -1,0 +1,32 @@
+﻿# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+dist-ssr
+*.local
+
+# Visual Studio files (IMPORTANT)
+.vs/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.slnx
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+
+# OS files
+.DS_Store
+
+# Environment files
+.env
+.env*.local
+mapk.env
